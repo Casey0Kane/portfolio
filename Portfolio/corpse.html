@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name=”viewport” content=”width=device-width, initial-scale=1”>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <title>Portfolio</title>
   <ul class="navigation">
       <li class="nav-item-title">My Projects</li>
@@ -20,16 +20,20 @@
       <h1 class="hero"> My Portfolio </h1>
       <h1> My Projects on hamburger menu </h1>
       <section id="interests">
+        <article class="template" data-category="hi">
         <h1> My interests: </h1> <img id="filler" src="http://placehold.it/400x250">
         <ul>
-          <li>interest 1 <img src="http://placehold.it/140x100"></li>
-          <li>interest 2 <img src="http://placehold.it/140x100"></li>
-          <li>interest 3 <img src="http://placehold.it/140x100"></li>
-          <li>interest 4 <img src="http://placehold.it/140x100"></li>
-          <li>interest 5 <img src="http://placehold.it/140x100"></li>
+          <li id="one">interest 1 <img src="http://placehold.it/140x100"></li>
+          <li id="two">interest 2 <img src="http://placehold.it/140x100"></li>
+          <li id="three">interest 3 <img src="http://placehold.it/140x100"></li>
+          <li id="four">interest 4 <img src="http://placehold.it/140x100"></li>
+          <li id="five">interest 5 <img src="http://placehold.it/140x100"></li>
         </ul>
+      </article>
       </section>
       <h1>About me</h1>
+      <div class="content-placeholder"></div>
+
       <img src="http://placehold.it/500x250">
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
@@ -38,7 +42,12 @@
     </main>
     <footer>
       &copy; 2016 Code Fellows | Casey Portfolio | First draft
-    </footer>      
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="js/interests.js"> </script>
+    <script src="js/aboutme.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.amd.js"></script>
+
   </div>
 
   </html>
