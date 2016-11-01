@@ -1,185 +1,90 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>My Portfolio</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600|Source+Code+Pro" rel="stylesheet" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js" type="text/javascript"></script><![endif]-->
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/skel.min.js">
-		{
-			prefix: 'css/style',
-			preloadStyleSheets: true,
-			resetCSS: true,
-			boxModel: 'border',
-			grid: { gutters: 30 },
-			breakpoints: {
-				wide: { range: '1200-', containers: 1140, grid: { gutters: 50 } },
-				narrow: { range: '481-1199', containers: 960 },
-				mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
-			}
-		}
-		</script>
-		<script>
-			$(function() {
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
 
-				// Note: make sure you call dropotron on the top level <ul>
-				$('#main-nav > ul').dropotron({
-					offsetY: -10 // Nudge up submenus by 10px to account for padding
-				});
+  </head>
+  <body>
+    <header class="site-header clearfix">
+      <section class="heading-group-h1">
+        <h1>
 
-			});
-		</script>
-		<script>
-			// DOM ready
-			$(function() {
-
-			// Create the dropdown base
-			$("<select />").appendTo("nav");
-
-			// Create default option "Go to..."
-			$("<option />", {
-				"selected": "selected",
-				"value"   : "",
-				"text"    : "Menu"
-			}).appendTo("nav select");
-
-			// Populate dropdown with menu items
-			$("nav a").each(function() {
-			var el = $(this);
-			$("<option />", {
-				"value"   : el.attr("href"),
-				"text"    : el.text()
-			}).appendTo("nav select");
-			});
-
-			// To make dropdown actually work
-			// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
-			$("nav select").change(function() {
-				window.location = $(this).find("option:selected").val();
-			});
-
-			});
-		</script>
-	</head>
-	<body>
-		<div id="header_container">
-		    <div class="container">
-			<!-- Header -->
-				<div id="header" class="row">
-					<div class="4u">
-						<div class="wrapper">
-							<h1><a href="index.html"><span class="header_colour">My Portfolio</span></a></h1>
-							<h2>Casey O'Kane</h2>
-					    </div>
-					</div>
-
-					<nav id="main-nav" class="8u">
-						<ul>
-							<li><a class="active" href="index.html">Home</a></li>
-							<li><a href="#">Projects</a></li>
-							<li><a href="#">Interests</a></li>
-							<li><a href="#">About me</a></li>
-							<li>
-								<a href="#">Projects</a>
-									<ul>
-										<li><a href="">Bus mall</a></li>
-										<li><a href="#">Salmon cookies</a></li>
-										<li>
-											<a href="#">Wireframe excersise</a>
-												<!-- <ul>
-													<li><a href="#">Sub Drop Down One</a></li>
-													<li><a href="#">Sub Drop Down Two</a></li>
-													<li><a href="#">Sub Drop Down Three</a></li>
-													<li><a href="#">Sub Drop Down Four</a></li>
-													<li><a href="#">Sub Drop Down Five</a></li>
-												</ul> -->
-										</li>
-									</ul>
-							</li>
-							<li><a href="https://github.com/Casey0Kane">GitHub</a> | <a href="https://www.linkedin.com/in/casey-o-kane-042536129?trk=nav_responsive_tab_profile_pic">LinkedIn</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-
-        </div>
-
-		<div id="site_content">
-
-		    <div class="container">
-				<div class="12u">
-					<div id="wrapper-banner">
-						<!-- Banner -->
-						<div id="banner">
-							<a href="#"><img src="http://wallpaperspics.com/thumbs/26/4/waterfall-mountain-break-267828.jpg" alt="banner image" /></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		    <div class="container">
-				<div class="12u">
-					<div id="strapline">
-						<h2>Welcome to my site</h2>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-
-				<!-- Features -->
-				<div class="row">
-
-					<section class="4u">
-						<div id="sidebar">
-
-
-						</div>
-					</section>
-
-					<section class="8u">
-
-						<section id="articles">
-          <article class="template" data-category="cat">
-            <header>
-              <h1></h1>
-              <div class="byline">
-                <address><a href=""></a></address>
-                 <time pubdate datetime="2000-01-01"></time>
-              </div>
-            </header>
-          <section class="article-body"></section>
-        </article>
+        </h1>
       </section>
+      <!-- <nav class="main-nav">
+       Hamburger Icon
+       <! <div class="icon-menu"></div>
+       <ul>
+         <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
+         <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
+         <li><a href="#" target="_blank" class="icon-twitter3"> Projects</a></li>
+         <li><a href="#" target="_blank" class="icon-github"> Interests</a></li>
+       </ul>
+     </nav> -->
+    </header>
+    <main>
 
-				</div>
+      <div id="slideshow">
+     <div>
+       <img src="https://www.bhmpics.com/wallpapers/city_night_street_traffic-1920x1080.jpg">
+     </div>
+     <div>
+       <img src="http://cdn.pcwallart.com/images/city-street-at-night-wallpaper-4.jpg">
+     </div>
+     <div>
+       <img src="http://cdn.pcwallart.com/images/japan-city-streets-at-night-wallpaper-4.jpg" />
+     </div>
+  </div>
 
-			</div>
-        </div>
-				<section class="interests">
-					<h3>Interests</h3>
-					<ul>
-						<li>Interest1</li>
-						<li>Interest2</li>
-						<li>Interest3</li>
-						<li>Interest4</li>
-						<li>Interest5</li>
-					</ul>
-				</section>
+  <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Home</a>
+    <a href="#">About </a>
+    <a href="#">Projects </a>
+    <a href="#">Interests</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
 
+      <script id="neighborhood-template" type="text/x-handlebars-template">
+      <h1>{{about}}</h1>
+      <p id="lorem">{{lorem}}{{lorem}}</p>
 
-		<div class="footer-wrapper">
-			<div class="container">
-			<!-- Footer -->
-				<footer>
-					<p><img src="images/twitter.png" alt="twitter" />&nbsp;<img src="images/facebook.png" alt="facebook" />&nbsp;<img src="images/rss.png" alt="rss" /></p>
-					<p><a href="index.html">Home</a> | <a href="#">Projects</a> | <a href="#">Interests</a> | <a href="#">About me</a> | <a href="https://github.com/Casey0Kane">GitHub</a> | <a href="https://www.linkedin.com/in/casey-o-kane-042536129?trk=nav_responsive_tab_profile_pic">LinkedIn</a></p>
-					<p>Copyright &copy; Codefellows | Casey O'Kane
-			</div>
-		</div>
-		<script src="js/functionholder.js"></script>
-		<script src="js/functions.js"></script>
-	</body>
+      <h3>{{Project}}</h3>
+      <p>{{bus}}</p>
+      <p>{{salmon}}</p>
+      <p>{{wireframe}}</p>
+
+      <div id="interests">
+      <h2>{{myinterest}}</h2>
+      <p>{{interest1}}</p>
+      <p>{{interest2}}</p>
+      <p>{{interest3}}</p>
+      <p>{{interest4}}</p>
+      <p>{{interest5}}</p>
+    </div>
+
+      <h2>{{contact}}</h2>
+      <p><a href="https://www.linkedin.com/in/casey-o-kane-042536129?trk=hp-identity-name">{{linkedin}}</a></p>
+      <p><a href="https://github.com/Casey0Kane">{{github}}</a></p>
+      </script>
+      <section id="neighborhoods">
+
+    </section>
+    </main>
+    <footer>
+      &copy; Code Fellows || Casey O'Kane
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="models/info.js"></script>
+    <script src="js/dataSet.js"></script>
+    <script src="js/handlebar.js"></script>
+  </body>
 </html>
