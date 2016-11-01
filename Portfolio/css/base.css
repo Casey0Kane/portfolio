@@ -1,0 +1,71 @@
+*{
+}
+
+main {
+  position: relative;
+}
+
+li {
+  display: inline;
+  text-decoration: none;
+}
+
+ul  {
+  display: inline;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: orange;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: salmon;
+  margin: auto;
+  text-align: center;
+}
+
+h3 {
+  position: relative;
+  top: 1em;
+  text-align: center;
+  color: orange;
+}
+
+#lorem {
+  /*background-color: lightgray;*/
+  display: block;
+  overflow-x: scroll;
+  max-width: 60%;
+  max-height: 50%;
+  margin: auto;
+  position: relative;
+}
+
+img {
+  max-width: 90em;
+  max-height: 80em;
+}
+
+p {
+  text-align: center;
+  overflow-y:scroll;
+  padding: .5em;
+}
+
+#interests {
+  color: white;
+  text-align: center;
+  float: right;
+}
+
+footer {
+  text-align: center;
+  background-color: teal;
+}
