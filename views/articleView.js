@@ -61,10 +61,10 @@
     $('#ajax-spinner').fadeOut();
     $('#filters').fadeIn();
     Article.allArticles.forEach(function(a){
-      if($('#category-filter option:contains("'+ a.category + '")').length === 0) {
+      if($('#category-filter option:contains("' + a.category + '")').length === 0) {
         $('#category-filter').append(articleView.renderArticleInfo(a, '#category-filter-template'));
       };
-      if($('#author-filter option:contains("'+ a.author + '")').length === 0) {
+      if($('#author-filter option:contains("' + a.author + '")').length === 0) {
         $('#author-filter').append(articleView.renderArticleInfo(a, '#author-filter-template'));
       };
       $('#articles').append(articleView.renderArticleInfo(a, '#article-template'));
