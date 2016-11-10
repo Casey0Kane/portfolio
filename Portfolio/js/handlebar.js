@@ -53,3 +53,18 @@ window.onclick = function(event) {
     }
   }
 };
+
+var data = {
+  'first': 'Salmon Cookies',
+  'second': 'Bus Mall',
+  'third': 'Wireframe',
+};
+
+
+var s = $('<select />');
+
+for(var val in data) {
+  $('<option />', {value: val, text: data[val]}).appendTo(s);
+}
+
+s.appendTo('body');
